@@ -2,18 +2,33 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.header`
 	display: flex;
-	justify-content: space-between;
+	justify-content: center;
 	width: 100%;
 	padding: 1.4375rem;
 
 	@media screen and (width>=768px) {
+		justify-content: space-between;
 		padding: 1.4375rem 2.875rem;
+	}
+
+	@media screen and (width>=1024px) {
+		padding: 2.875rem;
 	}
 `;
 
 const StyledIcon = styled.img`
 	height: 3.125rem;
 	width: 3.125rem;
+`;
+
+const StyledSocialContainer = styled.div`
+	display: none;
+
+	@media screen and (width>=768px) {
+		display: flex;
+		gap: 1rem;
+		gap: 2.125rem;
+	}
 `;
 
 const StyledSVG = styled.img`
@@ -24,15 +39,6 @@ const StyledSVG = styled.img`
 			transition: transform 0.3s ease;
 			transform: rotate(35deg);
 		}
-	}
-`;
-
-const StyledSocialContainer = styled.div`
-	display: flex;
-	gap: 1rem;
-
-	@media screen and (width>=768px) {
-		gap: 2.125rem;
 	}
 `;
 
