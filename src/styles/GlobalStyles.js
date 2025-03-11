@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { COLORS } from './colors';
 import './normalize.css';
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -26,6 +27,8 @@ export const GlobalStyles = createGlobalStyle`
 
     body{
         font-family: "Fira Code", monospace;
+        background-color: ${COLORS.primary};
+        color: ${COLORS.text};
     }
 
     h1, h2, h3, h4, h5, h6, p {
