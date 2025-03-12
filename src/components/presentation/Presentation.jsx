@@ -1,25 +1,38 @@
+import {
+	StyledImage,
+	StyledName,
+	StyledObjectKey,
+	StyledPortraitContainer,
+	StyledPresentation,
+	StyledRedTag,
+	StyledRole,
+	StyledStory,
+	StyledSubPortrait,
+	StyledTextContainer
+} from './presentation.styles';
+
 const Presentation = ({ text }) => {
 	return (
-		<div>
-			<div>
+		<StyledPresentation>
+			<StyledTextContainer>
 				<span>{text.cheer}</span>
 				<span>
-					{text.subject} <span>{'{'}</span>
-					<span>Fernando</span>
-					<span>{'}'}</span>
+					{text.subject} <StyledObjectKey>{'{'}</StyledObjectKey>
+					<StyledName>Fernando</StyledName>
+					<StyledObjectKey>{'}'}</StyledObjectKey>
 				</span>
-				<span>{text.role}</span>
-				<p>{text.presentation}</p>
-			</div>
-			<div>
+				<StyledRole>{text.role}</StyledRole>
+				<StyledStory>{text.presentation}</StyledStory>
+			</StyledTextContainer>
+			<StyledPortraitContainer>
 				<span>{'<div>'}</span>
-				<div>
-					<span>{'<StyledPortrait/>'}</span>
-					<img src='/assets/images/portrait.jpg' alt='portrait' />
+				<StyledSubPortrait>
+					<StyledRedTag>{'<StyledPortrait/>'}</StyledRedTag>
+					<StyledImage $image='/assets/images/portrait.jpg'></StyledImage>
 					<span>{'</div>'}</span>
-				</div>
-			</div>
-		</div>
+				</StyledSubPortrait>
+			</StyledPortraitContainer>
+		</StyledPresentation>
 	);
 };
 
