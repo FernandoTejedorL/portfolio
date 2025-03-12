@@ -1,22 +1,27 @@
 import { SKILLS_INFO } from '../../constants/skills';
+import {
+	StyledComment,
+	StyledIconsContainer,
+	StyledSkillsContainer
+} from './skills.styles';
 
 const Skills = ({ text }) => {
 	return (
-		<div>
+		<StyledSkillsContainer>
 			<span>
 				{text.feature}{' '}
-				<span>
+				<StyledComment>
 					{'/*'}
 					{text.subfeature}
 					{'*/'}
-				</span>
+				</StyledComment>
 			</span>
-			<div>
+			<StyledIconsContainer>
 				{SKILLS_INFO.map(item => (
 					<img key={item.id} src={item.image} alt='logo' />
 				))}
-			</div>
-		</div>
+			</StyledIconsContainer>
+		</StyledSkillsContainer>
 	);
 };
 

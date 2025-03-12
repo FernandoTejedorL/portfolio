@@ -11,7 +11,7 @@ const ENGLISH_INFO = {
 		human: {
 			type: 'human',
 			icon: '/assets/images/logos/data_array.png',
-			description: `I’m a creative thinker, always driven by curiosity and a restless desire to explore new challenges. Whether it’s building innovative solutions, diving into the world of music— both as a listener and a creator — or simply enjoying time with my dog, I find inspiration in every experience. Passionate about learning and evolving, I embrace new aspirations with an open mind, always looking for ways to push boundaries and grow.`
+			description: `I’m a creative thinker, always driven by curiosity and a restless desire to explore new challenges. Whether it’s building innovative solutions, diving into the world of music — both as a listener and a creator — or simply enjoying time with my dog, I find inspiration in every experience. Passionate about learning and evolving, I embrace new aspirations with an open mind, always looking for ways to push boundaries and grow.`
 		},
 		developer: {
 			type: 'developer',
