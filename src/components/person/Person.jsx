@@ -1,20 +1,30 @@
+import {
+	StyledIcon,
+	StyledName,
+	StyledObjectKey,
+	StyledPerson,
+	StyledTag,
+	StyledText,
+	StyledTextContainer
+} from './person.styles';
+
 const Person = ({ text, persona }) => {
 	return (
-		<div>
+		<StyledPerson>
 			<span>
-				{text.as} <span>{'{'}</span>
-				<span>{text.person[persona].type}</span>
-				<span>{'}'}</span>
+				{text.as} <StyledObjectKey>{'{'}</StyledObjectKey>
+				<StyledName>{text.person[persona].type}</StyledName>
+				<StyledObjectKey>{'}'}</StyledObjectKey>
 			</span>
 			<div>
-				<img src={text.person[persona].icon} alt='icon' />
-				<div>
+				<StyledIcon src={text.person[persona].icon} alt='icon' />
+				<StyledTextContainer>
 					<span>{'<p>'}</span>
-					<p>{text.person[persona].description}</p>
-					<span>{'</p>'}</span>
-				</div>
+					<StyledText>{text.person[persona].description}</StyledText>
+					<StyledTag>{'</p>'}</StyledTag>
+				</StyledTextContainer>
 			</div>
-		</div>
+		</StyledPerson>
 	);
 };
 
