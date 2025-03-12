@@ -1,14 +1,29 @@
 import {
 	StyledHeader,
 	StyledIcon,
+	StyledLogo,
 	StyledSocialContainer,
 	StyledSVG
 } from './header.styles';
 
-const Header = () => {
+const Header = ({ language, setLanguage }) => {
 	return (
 		<StyledHeader>
-			<StyledIcon src='/assets/images/logos/logo.png' alt='logo' />
+			{language === 'ES' && (
+				<StyledIcon
+					onClick={() => setLanguage('EN')}
+					src='/assets/images/logos/uk.svg'
+					alt='english'
+				/>
+			)}
+			{language === 'EN' && (
+				<StyledIcon
+					onClick={() => setLanguage('ES')}
+					src='/assets/images/logos/spain.svg'
+					alt='spanish'
+				/>
+			)}
+			<StyledLogo src='/assets/images/logos/logo.png' alt='logo' />
 			<StyledSocialContainer>
 				<a
 					href='mailto:fernandotejedorlopez@gmail.com'

@@ -2,12 +2,11 @@ import styled from 'styled-components';
 
 const StyledHeader = styled.header`
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	width: 100%;
 	padding: 1.4375rem;
 
 	@media screen and (width>=768px) {
-		justify-content: space-between;
 		padding: 1.4375rem 2.875rem;
 	}
 
@@ -17,8 +16,27 @@ const StyledHeader = styled.header`
 `;
 
 const StyledIcon = styled.img`
+	height: 3rem;
+	width: 3rem;
+`;
+
+const StyledLogo = styled.img`
 	height: 3.125rem;
 	width: 3.125rem;
+
+	@media screen and (width>=768px) {
+		position: absolute;
+		left: 50%;
+		translate: -50%;
+		height: 4rem;
+		width: 4rem;
+	}
+
+	@media screen and (width>=1024px) {
+		top: 2rem;
+		height: 5rem;
+		width: 5rem;
+	}
 `;
 
 const StyledSocialContainer = styled.div`
@@ -32,6 +50,8 @@ const StyledSocialContainer = styled.div`
 `;
 
 const StyledSVG = styled.img`
+	height: 3rem;
+	width: 3rem;
 	@media (hover: hover) {
 		&:hover {
 			filter: brightness(0) saturate(100%) invert(82%) sepia(49%) saturate(371%)
@@ -42,4 +62,10 @@ const StyledSVG = styled.img`
 	}
 `;
 
-export { StyledHeader, StyledIcon, StyledSocialContainer, StyledSVG };
+export {
+	StyledHeader,
+	StyledIcon,
+	StyledLogo,
+	StyledSocialContainer,
+	StyledSVG
+};
