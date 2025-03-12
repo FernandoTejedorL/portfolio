@@ -9,6 +9,6 @@ export const PROJECTS_INFO = [
 	{
 		id: v4(),
 		name: 'Mythos - Dec 2024',
-		image: 'public/assets/images/projects/mythos.jpg'
+		image: '/assets/images/projects/mythos.jpg'
 	}
 ];

@@ -18,6 +18,7 @@ const StyledHeader = styled.header`
 const StyledIcon = styled.img`
 	height: 3rem;
 	width: 3rem;
+	cursor: pointer;
 `;
 
 const StyledLogo = styled.img`

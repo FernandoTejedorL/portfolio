@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { COLORS } from '../../styles/colors';
 import { FONT_SIZE, FONT_WEIGHT } from '../../styles/fonts';
 
 const StyledContactContainer = styled.div`
@@ -30,6 +31,12 @@ const StyledLink = styled.a`
 	display: flex;
 	align-items: center;
 	gap: 1.5rem;
+
+	@media (hover: hover) {
+		&:hover {
+			color: ${COLORS.yellow};
+		}
+	}
 `;
 
 const StyledTexts = styled.span`
