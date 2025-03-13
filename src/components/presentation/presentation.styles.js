@@ -7,6 +7,11 @@ const StyledPresentation = styled.div`
 	flex-direction: column;
 	padding: 1rem;
 	font-size: ${FONT_SIZE.xl};
+
+	@media screen and (width>=1024px) {
+		flex-direction: row;
+		align-items: center;
+	}
 `;
 
 const StyledTextContainer = styled.div`
@@ -30,6 +35,10 @@ const StyledRole = styled.span`
 
 const StyledStory = styled.p`
 	font-size: ${FONT_SIZE.p};
+
+	@media screen and (width>=1024px) {
+		width: 90%;
+	}
 `;
 
 const StyledPortraitContainer = styled.div`
@@ -69,6 +78,13 @@ const StyledImage = styled.div`
 	background-repeat: no-repeat;
 	background-position: top -3.125rem center;
 	background-size: cover;
+
+	@media screen and (width>=1024px) {
+		width: 17.0625rem;
+		height: 23.5625rem;
+		border-radius: 5.625rem;
+		background-position: center;
+	}
 `;
 
 export {
