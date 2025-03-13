@@ -1,16 +1,25 @@
 import { PROJECTS_INFO } from '../../constants/projects';
 import EachProject from '../eachProject/EachProject';
+import {
+	StyledHeader,
+	StyledInAction,
+	StyledProject,
+	StyledProjectsContainer
+} from './projects.styles';
 
 const Projects = ({ text }) => {
 	return (
-		<div>
-			<span>
-				{text.portfolio.type} <span>{text.portfolio.in}</span>
-			</span>
-			{PROJECTS_INFO.map(item => (
-				<EachProject key={item.id} item={item} />
-			))}
-		</div>
+		<StyledProject>
+			<StyledHeader>
+				{text.portfolio.type}{' '}
+				<StyledInAction>{text.portfolio.in}</StyledInAction>
+			</StyledHeader>
+			<StyledProjectsContainer>
+				{PROJECTS_INFO.map(item => (
+					<EachProject key={item.id} item={item} />
+				))}
+			</StyledProjectsContainer>
+		</StyledProject>
 	);
 };
 
