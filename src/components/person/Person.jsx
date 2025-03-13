@@ -1,29 +1,31 @@
 import {
+	StyledHeader,
 	StyledIcon,
 	StyledName,
 	StyledObjectKey,
 	StyledPerson,
 	StyledTag,
 	StyledText,
+	StyledTextAndIcon,
 	StyledTextContainer
 } from './person.styles';
 
-const Person = ({ text, persona }) => {
+const Person = ({ text, persona, reverse }) => {
 	return (
 		<StyledPerson>
-			<span>
+			<StyledHeader $reverse={reverse}>
 				{text.as} <StyledObjectKey>{'{'}</StyledObjectKey>
 				<StyledName>{text.person[persona].type}</StyledName>
 				<StyledObjectKey>{'}'}</StyledObjectKey>
-			</span>
-			<div>
+			</StyledHeader>
+			<StyledTextAndIcon $reverse={reverse}>
 				<StyledIcon src={text.person[persona].icon} alt='icon' />
 				<StyledTextContainer>
 					<span>{'<p>'}</span>
 					<StyledText>{text.person[persona].description}</StyledText>
 					<StyledTag>{'</p>'}</StyledTag>
 				</StyledTextContainer>
-			</div>
+			</StyledTextAndIcon>
 		</StyledPerson>
 	);
 };

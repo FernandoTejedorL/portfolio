@@ -10,6 +10,10 @@ const StyledPerson = styled.div`
 	margin-bottom: 1rem;
 `;
 
+const StyledHeader = styled.span`
+	align-self: ${({ $reverse }) => ($reverse ? 'flex-end' : null)};
+`;
+
 const StyledObjectKey = styled.span`
 	color: ${COLORS.turquoise};
 	font-weight: ${FONT_WEIGHT.bold};
@@ -19,8 +23,19 @@ const StyledName = styled.span`
 	font-weight: ${FONT_WEIGHT.bold};
 `;
 
+const StyledTextAndIcon = styled.div`
+	display: flex;
+	flex-direction: ${({ $reverse }) => ($reverse ? 'row-reverse' : 'row')};
+	align-items: center;
+	gap: 3rem;
+`;
+
 const StyledIcon = styled.img`
 	display: none;
+
+	@media screen and (width>=1024px) {
+		display: block;
+	}
 `;
 
 const StyledTextContainer = styled.div`
@@ -42,11 +57,13 @@ const StyledTag = styled.span`
 `;
 
 export {
+	StyledHeader,
 	StyledIcon,
 	StyledName,
 	StyledObjectKey,
 	StyledPerson,
 	StyledTag,
 	StyledText,
+	StyledTextAndIcon,
 	StyledTextContainer
 };

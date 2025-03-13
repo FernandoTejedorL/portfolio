@@ -10,7 +10,7 @@ const Main = ({ text }) => {
 		<StyledMain>
 			<Presentation text={text} />
 			<Person text={text} persona={'human'} />
-			<Person text={text} persona={'developer'} />
+			<Person text={text} persona={'developer'} reverse={true} />
 			<Skills text={text} />
 			<Projects text={text} />
 			<Contact text={text} />
