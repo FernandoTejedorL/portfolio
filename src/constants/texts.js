@@ -41,7 +41,7 @@ const SPANISH_INFO = {
 			type: 'humano',
 			icon: '/assets/images/logos/data_array.png',
 			description:
-				'Soy una persona creativo, siempre impulsado por la curiosidad y un el deseo de explorar nuevos retos. Ya sea creando soluciones innovadoras, perdiéndome en el mundo de la música (tanto como oyente como creador) o simplemente disfrutando del tiempo con mi perro, encuentro inspiración en cada experiencia. Apasionado por aprender y evolucionar, me lanzo a nuevas aspiraciones con una mente abierta, buscando siempre formas de superar los límites y crecer.'
+				'Soy una persona creativa, siempre impulsado por la curiosidad y un el deseo de explorar nuevos retos. Ya sea creando soluciones innovadoras, perdiéndome en el mundo de la música (tanto como oyente como creador) o simplemente disfrutando del tiempo con mi perro, encuentro inspiración en cada experiencia. Apasionado por aprender y evolucionar, me lanzo a nuevas aspiraciones con una mente abierta, buscando siempre formas de superar los límites y crecer.'
 		},
 		developer: {
 			type: 'desarrollador',
