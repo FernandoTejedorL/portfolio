@@ -49,7 +49,7 @@ const StyledTexts = styled.span`
 	}
 
 	@media screen and (width>=1024px) {
-		font-size: ${FONT_SIZE.xl};
+		font-size: ${FONT_SIZE.l};
 	}
 `;
 
