@@ -8,11 +8,11 @@ const StyledContactContainer = styled.div`
 	gap: 1.5rem;
 	padding: 1rem;
 	margin-block: 2rem;
-	font-size: ${FONT_SIZE.xl};
+	font-size: ${FONT_SIZE.l};
 	font-weight: ${FONT_WEIGHT.bold};
 
 	@media screen and (width>=1024px) {
-		font-size: ${FONT_SIZE.xl};
+		font-size: ${FONT_SIZE.l};
 	}
 `;
 
@@ -49,7 +49,7 @@ const StyledTexts = styled.span`
 	}
 
 	@media screen and (width>=1024px) {
-		font-size: ${FONT_SIZE.l};
+		font-size: ${FONT_SIZE.m};
 	}
 `;
 
