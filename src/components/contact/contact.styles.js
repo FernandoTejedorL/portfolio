@@ -12,7 +12,7 @@ const StyledContactContainer = styled.div`
 	font-weight: ${FONT_WEIGHT.bold};
 
 	@media screen and (width>=1024px) {
-		font-size: ${FONT_SIZE.xxl};
+		font-size: ${FONT_SIZE.xl};
 	}
 `;
 
