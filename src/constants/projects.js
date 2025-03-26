@@ -9,6 +9,12 @@ export const PROJECTS_INFO = [
 	},
 	{
 		id: v4(),
+		name: 'Game Shop - Jan 2025',
+		image: '/assets/images/projects/gameshop.jpg',
+		link: 'https://game-shop-tizx.onrender.com/'
+	},
+	{
+		id: v4(),
 		name: 'Mythos - Dec 2024',
 		image: '/assets/images/projects/mythos.jpg',
 		link: 'https://mythology-5o2f.onrender.com'

@@ -20,5 +20,13 @@ export const SKILLS_INFO = [
 	{
 		id: v4(),
 		image: '/assets/images/logos/node.png'
+	},
+	{
+		id: v4(),
+		image: '/assets/images/logos/rtl.png'
+	},
+	{
+		id: v4(),
+		image: '/assets/images/logos/jest.png'
 	}
 ];
