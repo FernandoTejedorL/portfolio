@@ -18,5 +18,11 @@ export const PROJECTS_INFO = [
 		name: 'Mythos - Dec 2024',
 		image: '/assets/images/projects/mythos.jpg',
 		link: 'https://mythology-5o2f.onrender.com'
+	},
+	{
+		id: v4(),
+		name: 'Planets Facts - Nov 2024',
+		image: '/assets/images/projects/planets.jpg',
+		link: 'https://planets-fact-site-awbm.onrender.com'
 	}
 ];
