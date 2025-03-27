@@ -1,13 +1,17 @@
 import {
+	StyledContainer,
 	StyledDot,
 	StyledDotsContainer,
 	StyledEachProject,
-	StyledTitle
+	StyledGitContainer,
+	StyledTitle,
+	StyledToGit,
+	StyledToGitIcon
 } from './eachProject.styles';
 
 const EachProject = ({ item }) => {
 	return (
-		<div>
+		<StyledContainer>
 			<StyledEachProject
 				href={item.link}
 				target='_blank'
@@ -20,8 +24,19 @@ const EachProject = ({ item }) => {
 					<StyledDot $color={'turquoise'}></StyledDot>
 				</StyledDotsContainer>
 			</StyledEachProject>
-			<StyledTitle>{item.name}</StyledTitle>
-		</div>
+			<StyledToGit>
+				<StyledTitle>{item.name}</StyledTitle>
+				<StyledGitContainer
+					href={item.git}
+					target='_blank'
+					rel='noopener noreferrer'
+				>
+					<span>{'</'}</span>
+					<StyledToGitIcon src='/assets/images/logos/github.svg' alt='github' />
+					<span>{'>'}</span>
+				</StyledGitContainer>
+			</StyledToGit>
+		</StyledContainer>
 	);
 };
 
