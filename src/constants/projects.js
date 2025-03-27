@@ -28,7 +28,7 @@ export const PROJECTS_INFO = [
 	{
 		id: v4(),
 		name: 'ToDo APP - OCT 2024',
-		image: 'public/assets/images/projects/todo.jpg',
+		image: '/assets/images/projects/todo.jpg',
 		link: 'https://todo-app-lwop.onrender.com'
 	}
 ];
