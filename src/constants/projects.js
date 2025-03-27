@@ -24,5 +24,11 @@ export const PROJECTS_INFO = [
 		name: 'Planets Facts - Nov 2024',
 		image: '/assets/images/projects/planets.jpg',
 		link: 'https://planets-fact-site-awbm.onrender.com'
+	},
+	{
+		id: v4(),
+		name: 'ToDo APP - OCT 2024',
+		image: 'public/assets/images/projects/todo.jpg',
+		link: 'https://todo-app-lwop.onrender.com'
 	}
 ];
