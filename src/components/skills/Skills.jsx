@@ -18,7 +18,7 @@ const Skills = ({ text }) => {
 			</span>
 			<StyledIconsContainer>
 				{SKILLS_INFO.map(item => (
-					<img key={item.id} src={item.image} alt='logo' />
+					<img key={item.id} src={item.image} title={item.title} alt='logo' />
 				))}
 			</StyledIconsContainer>
 		</StyledSkillsContainer>
